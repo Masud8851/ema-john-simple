@@ -5,6 +5,13 @@
     align-items: center; 
     padding: 10px;
 }
+.product img{
+    padding: 10px;
+    margin: 10px;
+}
+.details{
+    margin: 15px;
+}
 
 .product-name{
     color: blue;
