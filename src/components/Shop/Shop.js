@@ -3,7 +3,8 @@ import Product from '../Product/Product';
 import '../Shop/Shop.css'
 
 const Shop = () => {
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
 
     useEffect(() =>{
         fetch('./products.JSON')
