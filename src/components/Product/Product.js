@@ -10,9 +10,11 @@ const Product = (props) => {
             <div>
                 <img src={img} alt="" />
             </div>
-            <h2>{name}</h2>
-            <p><small>by: {seller}</small></p>
-            <p>Price: {price}</p>
+            <div>
+                <h2>{name}</h2>
+                <p><small>by: {seller}</small></p>
+                <p>Price: {price}</p>
+            </div>
         </div>
     );
 };
