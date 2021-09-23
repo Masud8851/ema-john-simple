@@ -1,9 +1,13 @@
 .product{
     display: flex;
     border-bottom: 1px solid lightslategrey;
-    margin-right: 5px;
+    margin-right: 10px;
+    align-items: center; 
+    padding: 10px;
 }
+
 .product-name{
     color: blue;
     font-weight: 400;
 }
+
