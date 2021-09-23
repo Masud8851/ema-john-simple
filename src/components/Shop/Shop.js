@@ -12,7 +12,7 @@ const Shop = () => {
     },[])
 
     const handleAddCart = (product) => {
-        console.log(product.name)
+        console.log(product)
     }
 
     return (
