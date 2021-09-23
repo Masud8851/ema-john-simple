@@ -12,7 +12,9 @@
 .details{
     margin: 15px;
 }
-
+.mb{
+    margin-bottom: 10px;
+}
 .product-name{
     color: blue;
     font-weight: 400;
