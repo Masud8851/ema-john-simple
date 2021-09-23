@@ -12,6 +12,9 @@ const Cart = (props) => {
         total = total + product.price;
     }
 
+    const shipping = 15;
+    const tax = (total + shipping) * 10;
+    const grandTotal = total + shipping + tax;
 
     return (
         <div>
@@ -19,6 +22,12 @@ const Cart = (props) => {
             <h5>Items Order: {props.cart.length} </h5>
             <br />
             <p>Total: {total} </p>
+            <br />
+            <p>Shipping: {shipping}</p>
+            <br />
+            <p>Tax : {tax}</p>
+            <br />
+            <p>Grand Total: {grandTotal}</p>
         </div>
     );
 };
