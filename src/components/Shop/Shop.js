@@ -13,7 +13,8 @@ const Shop = () => {
     },[])
 
     const handleAddCart = (product) => {
-        console.log(product)
+        // console.log(product)
+        const newCart = [...cart,product]
     }
 
     return (
@@ -29,7 +30,7 @@ const Shop = () => {
             </div>
             <div className="cart-container">
                 <h4>Order Summary</h4>
-                <h5>Items Order: </h5>
+                <h5>Items Order: {cart.length} </h5>
             </div>
         </div>
     );
