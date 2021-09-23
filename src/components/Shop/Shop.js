@@ -2,8 +2,9 @@ import React from 'react';
 
 const Shop = () => {
     return (
-        <div>
-            <h4>This is shop</h4>
+        <div className="shop-container">
+            <div className="product-container"></div>
+            <div className="cart-container"></div>
         </div>
     );
 };
