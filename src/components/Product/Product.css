@@ -1,6 +1,7 @@
 .product{
     display: flex;
     border-bottom: 1px solid lightslategrey;
+    margin-right: 5px;
 }
 .product-name{
     color: blue;
