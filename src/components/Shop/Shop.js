@@ -11,6 +11,10 @@ const Shop = () => {
             .then(data=>setProducts(data))
     },[])
 
+    const handleAddCart = (product) => {
+        console.log(product.name)
+    }
+
     return (
         <div className="shop-container">
             <div className="product-container">
