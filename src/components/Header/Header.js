@@ -7,6 +7,12 @@ const Header = () => {
         <div className="header">
             {/* Header logo */}
             <img className="logo" src={logo}/>
+            <nav>
+                <a href="/shop">Shop</a>
+                <a href="/orders">Order Review</a>
+                <a href="/inventory">Manage Inventory</a>
+                <a href=""></a>
+            </nav>
         </div>
     );
 };
