@@ -21,13 +21,13 @@ const Cart = (props) => {
             <h4>Order Summary</h4>
             <h5>Items Order: {props.cart.length} </h5>
             <br />
-            <p>Total: {total} </p>
+            <p>Total: {total.toFixed(2)} </p>
             <br />
             <p>Shipping: {shipping}</p>
             <br />
-            <p>Tax : {tax}</p>
+            <p>Tax : {tax.toFixed(2)}</p>
             <br />
-            <p>Grand Total: {grandTotal}</p>
+            <p>Grand Total: {grandTotal.toFixed(2)}</p>
         </div>
     );
 };
