@@ -15,7 +15,9 @@
 .search-container{
     background-color: rgba(0, 0, 0, 0.883);
     text-align: center;
+    line-height: 60px;
 }
 .search-container input{
     width: 75%;
+    height: 25px;
 }
