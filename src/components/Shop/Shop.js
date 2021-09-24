@@ -30,6 +30,7 @@ const Shop = () => {
                 if(addedProduct){
                     const quantity = savedCart[key];
                     addedProduct.quantity = quantity;
+                    console.log(quantity)
                     storeCart.push(addedProduct);
                 }
             }
