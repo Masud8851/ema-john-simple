@@ -20,13 +20,18 @@ const Shop = () => {
 
     useEffect(() =>{
         console.log('L S Called')
-        const savedCart = getStoredCart();
-        for(const key in savedCart){
-            // console.log(key);
-            const addedProduct = products.find ( product => product.key === key);
-            console.log(addedProduct);
+        if(products.length){
+            const savedCart = getStoredCart();
+            const storeCart = [];
+            for(const key in savedCart){
+                // console.log(key);
+                const addedProduct = products.find ( product => product.key === key);
+                // console.log(addedProduct);
+                storeCart.push(addedProduct);
+            }
+            setCart(storeCart);
         }
-    },[])
+    },[products])
 
     const handleAddCart = (product) => {
         // console.log(product)
