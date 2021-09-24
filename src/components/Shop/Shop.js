@@ -16,6 +16,9 @@ const Shop = () => {
 
     useEffect(() =>{
         const savedCart = getStoredCart();
+        for(const key in savedCart){
+            console.log(key);
+        }
     },[])
 
     const handleAddCart = (product) => {
