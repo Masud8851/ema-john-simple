@@ -27,7 +27,11 @@ const Shop = () => {
                 // console.log(key);
                 const addedProduct = products.find ( product => product.key === key);
                 // console.log(addedProduct);
-                storeCart.push(addedProduct);
+                if(addedProduct){
+                    const quantity = savedCart[key];
+                    addedProduct.quantity = quantity;
+                    storeCart.push(addedProduct);
+                }
             }
             setCart(storeCart);
         }
