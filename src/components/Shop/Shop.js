@@ -9,6 +9,7 @@ const Shop = () => {
     const [cart, setCart] = useState([]);
 
     useEffect(() =>{
+        console.log('API Called')
         fetch('./products.JSON')
             .then(res=>res.json())
             .then(data=> {
