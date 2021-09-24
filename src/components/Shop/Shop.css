@@ -11,3 +11,11 @@
     margin-left: 50px;
     margin-right: 5px;
 }
+
+.search-container{
+    background-color: rgba(0, 0, 0, 0.883);
+    text-align: center;
+}
+.search-container input{
+    width: 75%;
+}
