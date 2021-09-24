@@ -7,6 +7,7 @@ import '../Shop/Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [displayProducts, setDisplayProducts] = useState([]);
 
     useEffect(() =>{
         console.log('API Called')
@@ -15,6 +16,7 @@ const Shop = () => {
             .then(data=> {
                 setProducts(data)
                 console.log('Product received')
+                setDisplayProducts(data)
             })
     },[])
 
@@ -46,17 +48,32 @@ const Shop = () => {
         addToDb(product.key)
     }
 
+
+    // Search Handel
+    const handleSearch = event => {
+        // console.log(event.target.value);
+        const searchText = event.target.value;
+        const matchProducts = products.filter(product => product.name.toLowerCase().includes(searchText));
+        // console.log(matchProducts)
+        setDisplayProducts(matchProducts);
+    }
+
+
     return (
         <>
             {/* Search Container */}
             <div className="search-container">
-                <input type="text"  placeholder="Search Products Here"/>
+                <input 
+                    type="text" 
+                    onChange ={handleSearch} 
+                    placeholder="Search Products Here"/>
             </div>
 
             <div className="shop-container">
                 <div className="product-container">
                     {
-                        products.map(product => <Product
+                        // products.map(product => <Product
+                        displayProducts.map(product => <Product
                             key = {product.key} 
                             product = {product}
                             handleAddCart = {handleAddCart}
