@@ -50,7 +50,7 @@ const Shop = () => {
         <>
             {/* Search Container */}
             <div className="search-container">
-                <input type="text" />
+                <input type="text"  placeholder="Search Products Here"/>
             </div>
 
             <div className="shop-container">
